@@ -1,0 +1,129 @@
+:root {
+  --mac-body-light: #eeebe6;
+  --mac-body-dark: #d8d4c9;
+  --mac-screen-light: #4d4c4f;
+  --mac-screen-dark: #37383a;
+  --mac-disk-dark: #d2ccc3;
+  --mac-disk-floppy: linear-gradient(#020108, #242524);
+}
+
+
+/* → Computer CSS */
+
+.macintosh {
+  width: 100vw;
+  height: 100vh;
+  /**/
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+}
+
+.macintosh-computer {
+  width: 500px;
+  height: 560px;
+  /**/
+  border-radius: 15px 15px 0 0;
+  background-color: var(--mac-body-light);
+  /**/
+  box-shadow: 0px 0px 1px 0px var(--mac-body-light);
+}
+
+.mac-body {
+  height: 470px;
+  /**/
+  border-radius: 15px 15px 5px 5px;
+  box-shadow: inset 0px -1px 2px 1px var(--mac-body-light), 0 8px 6px -6px black;
+  background: linear-gradient(to bottom right, var(--mac-body-light), var(--mac-body-dark));
+}
+
+.mac-disk {
+  height: 12px;
+  /**/
+  box-shadow: inset 0px 0px 3px 1px darkgray;
+  background-color: var(--mac-disk-dark);
+}
+
+.mac-footer {
+  height: 78px;
+  /**/
+  border-radius: 5px 5px 0 0;
+  box-shadow: inset 0px 1px 2px 1px var(--mac-body-light);
+  background: linear-gradient(to bottom right, var(--mac-disk-dark), var(--mac-body-dark));
+}
+
+
+/* → Monitor CSS */
+
+.mac-body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.mac-body-outerscreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /**/
+  height: 340px;
+  width: 420px;
+  margin-top: 50px;
+  /**/
+  box-shadow: inset 0px 0px 3px 1px var(--mac-body-dark);
+  border-radius: 15px 15px 15px 15px;
+  background: linear-gradient(to bottom right, var(--mac-body-dark), var(--mac-body-light), var(--mac-body-dark), var(--mac-body-light), var(--mac-body-dark), var(--mac-body-light));
+}
+
+.mac-body-innerscreen {
+  height: 300px;
+  width: 390px;
+  /**/
+  border-radius: 12px 12px 12px 12px;
+  background: linear-gradient(var(--mac-screen-light), var(--mac-screen-dark), var(--mac-screen-light))
+}
+
+
+/* → Disk CSS */
+.mac-disk {
+  display: flex;
+  flex-direction: row;
+}
+
+.mac-disk-floppy {
+  position: relative;
+  left: 260px;
+  /**/
+  width: 170px;
+  height: 100%;
+  /**/
+  box-shadow: inset 0px 0px 3px 1px #242524;
+  border-radius: 2px 2px 2px 2px;
+  background: var(--mac-disk-floppy)
+}
+
+.mac-disk-button {
+  position: relative;
+  left: 110px;
+  /**/
+  width: 8px;
+  height: 8px;
+  margin: auto;
+  /**/
+  border-radius: 50%;
+  background: var(--mac-disk-floppy)
+}
+
+
+/* → Logo CSS */
+.mac-footer-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  /**/
+  position: relative;
+  left: 45px;
+  top: 20px;
+}
