@@ -3,7 +3,7 @@
 import './style/Macintosh.css';
 
 //import app-elements
-import OperationSystem from './components/OS';
+import OperationSystem from './components/OperationSystem';
 
 function Macintosh() {
   return (
@@ -11,7 +11,6 @@ function Macintosh() {
     <div className='macintosh'>
 
       <main className='macintosh-computer'>
-        {/* Macintosh → Body */}
         <section className='mac-body'>
           <div className='mac-body-outerscreen'>
             <div className='mac-body-innerscreen'>

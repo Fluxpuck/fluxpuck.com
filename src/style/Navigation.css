@@ -1,0 +1,88 @@
+:root {
+    --text-color: #040406;
+    --OS-header-height: 15px;
+}
+
+/* → Navigation Styles
+Holds all the styles for the navigation bar (header)
+*/
+
+.OS-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    height: var(--OS-header-height);
+    width: 100%;
+    border-radius: 11px 11px 0 0;
+    background-color: aliceblue;
+    border-bottom: 1px solid black;
+}
+
+.OS-header p,
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 100%;
+    margin: 0;
+}
+
+.OS-logo {
+    height: 10px;
+    width: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    cursor: help;
+}
+
+.OS-nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    list-style: none;
+    user-select: none;
+}
+
+.OS-nav-items {
+    position: relative;
+}
+
+.OS-nav-list a:hover,
+p:hover {
+    background-color: black;
+    color: white;
+}
+
+.OS-nav-dropdown {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f8ff;
+    position: absolute;
+    width: 140px;
+    top: var(--OS-header-height);
+    margin-top: 1px;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.dropdown-item:hover {
+    background-color: black;
+    color: white;
+}
+
+.dropdown-active {
+    background-color: black;
+    color: white !important;
+}
+
+.OS-nav-items a,
+p {
+    display: block;
+    padding: 3px 4px 3px 4px;
+}

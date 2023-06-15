@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+
   overflow: hidden;
 
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -17,7 +18,11 @@ code {
     monospace;
 }
 
-p, a, i, span, label {
-  font-size: 12px;
+p,
+a,
+i,
+span,
+label {
+  font-size: 10px;
   font-weight: 400;
 }

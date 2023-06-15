@@ -1,48 +1,50 @@
 //import styling and assets
 // import images from './public/images'
-import '../style/OS.css';
+import '../style/Navigation.css';
 
 //import app-elements
 import React, { useState } from 'react';
-import { navigationItems } from './navigationItems';
+import { navigationItems } from './nav_items';
 
 const OSnavigation = () => {
 
+    // Activates or deactivates the dropdown menu
     const [activeIndex, setActiveIndex] = useState(null);
-
     const toggleDropdown = (index) => {
         setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
     };
 
+    // Handles the style of the sub menu item
+    const [isActive, setIsActive] = useState(false);
+    const handleClick = () => {
+        setIsActive(!isActive);
+    };
+
     return (
-        <nav>
+        <nav className='OS-nav-list'>
             {navigationItems.map((item, index) => (
-                <div key={index}>
+                <div key={index} className='OS-nav-items'>
                     {item.submenu ? (
-                        <div>
-                            <p onClick={() => toggleDropdown(index)}>{item.title}</p>
+                        <>
+                            <p onClick={() => {
+                                toggleDropdown(index);
+                                handleClick();
+                            }}
+                                className={`dropdown-button ${isActive ? 'dropdown-active' : ''}`}>{item.title}</p>
                             {activeIndex === index && (
-                                <div>
+                                <div className='OS-nav-dropdown'>
                                     {item.submenu.map((subItem, subIndex) => (
-                                        <div key={subIndex}>
-                                            <a href={subItem.url}>{subItem.title}</a>
-                                        </div>
+                                        <a class="dropdown-item" href={subItem.url}>{subItem.title}</a>
                                     ))}
                                 </div>
                             )}
-                        </div>
+                        </>
                     ) : (
                         <a href={item.url}>{item.title}</a>
                     )}
                 </div>
             ))}
         </nav>
-
     );
-
-
-
-
 };
-
 export default OSnavigation;

@@ -13,27 +13,31 @@ export const navigationItems = [
     submenu: [
       {
         title: 'Hyper(+)',
-        url: 'hyper-bot'
+        url: '/projects?=hyper-bot'
       },
       {
         title: 'Hyper Dashboard',
-        url: 'hyper-dashboard'
+        url: '/projects?=hyper-dashboard'
       },
       {
         title: 'Sero',
-        url: 'sero-bot'
+        url: '/projects?=sero-bot'
       },
       {
         title: 'Chatbot Collection',
-        url: 'discord-bots'
+        url: '/projects?=discord-bots'
       },
       {
         title: 'S6 Portfolio (NextJS)',
-        url: 'nextjs-app'
+        url: '/projects?=nextjs-app'
       },
       {
         title: 'AI_Denity',
-        url: 'aidentity'
+        url: '/projects?=aidentity'
+      },
+      {
+        title: '...',
+        url: '/projects'
       }
     ]
   },

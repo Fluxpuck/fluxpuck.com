@@ -1,5 +1,5 @@
 //import styling and assets
-import './style/index.css';
+import './style/Main.css';
 
 //import app-elements
 import Macintosh from './Macintosh';
