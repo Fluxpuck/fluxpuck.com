@@ -3,23 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --mac-body-light: #eeebe6;
-    --mac-body-dark: #d8d4c9;
-    --mac-screen-light: #4d4c4f;
-    --mac-screen-dark: #37383a;
-    --mac-disk-dark: #d2ccc3;
-    --mac-disk-floppy: linear-gradient(#020108, #242524);
-    --background-rgb: #2f4f4f;
-  }
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+    --background-darkslategray: 7 79 79
 }
 
 body {
-  color: var(--background-rgb)
+    background-color: var(--background-darkslategray)
 }
