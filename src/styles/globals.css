@@ -6,9 +6,9 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 214, 219, 220;
     --background-end-rgb: 255, 255, 255;
-    --background-darkslategray: 7 79 79
+    --background-rgb: 47 79 79;
 }
 
 body {
-    background-color: var(--background-darkslategray)
+    background-color: #2f4f4f;
 }
