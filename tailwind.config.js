@@ -11,14 +11,18 @@ module.exports = {
     theme: {
         extend: {
             height: {
-                'mac': '760px',
+                'in': 'inherit',
+                'mac': '740px',
                 'mac-body': '620px',
-                'mac-disk': '20px',
-                'mac-footer': '120px',
-                '90': '90%'
+                'mac-disk': '15px',
+                'mac-footer': '105px',
+                'footer': ' 60px',
+                '90': '90%',
+                '20': '24px'
             },
             width: {
                 'mac': '680px',
+                'footer': '640px',
                 '90': '90%'
             },
             colors: {
@@ -31,7 +35,7 @@ module.exports = {
             backgroundImage: theme => ({
                 'mac-gradient': 'linear-gradient(#eeebe6, #d8d4c9)',
             }),
-            boxShadow:{
+            boxShadow: {
                 'mac-body': 'inset 0 -2px 4px -2px whitesmoke',
                 'mac-disk': 'inset 0px 2px 2px 0px darkgray',
                 'mac-footer': 'inset 0px 3px 5px -3px whitesmoke'
@@ -43,7 +47,7 @@ module.exports = {
                 'layout': '200px minmax(900px, 1fr) 100px',
             },
             gridRowEnd: {
-                '9':  '9'
+                '9': '9'
             }
         },
     },
